@@ -74,8 +74,8 @@ This PowerShell code uses the Windows task scheduler to run the User Sync tool e
 
 Edit the following and run the commands from PowerShell.
 
--WorkingDirectory with your User-Sync Directory path
--User with an account that will be running the Task
+-WorkingDirectory with your User-Sync Directory path\
+-User with an account that will be running the Task\
 -Password with an account password
 
 ```powershell

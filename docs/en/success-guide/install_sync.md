@@ -21,14 +21,14 @@ This script will automatically install the required Python, download User Sync T
 Run the following command with elevated privileges:
 
 **Windows:**
-
-    (New-Object System.Net.WebClient).DownloadFile("https://git.io/fY19R","${PWD}\inst.ps1"); .\inst.ps1; rm -Force .\inst.ps1;
-
+```powershell
+(New-Object System.Net.WebClient).DownloadFile("https://git.io/fY19R","${PWD}\inst.ps1"); .\inst.ps1; rm -Force .\inst.ps1;
+```
 
 **Linux/MacOS:**
-
-    sudo sh -c 'wget -O ins.sh https://git.io/fY1SD; chmod 777 ins.sh; ./ins.sh; rm ins.sh;'
-
+```shell
+sudo sh -c 'wget -O ins.sh https://git.io/fY1SD; chmod 777 ins.sh; ./ins.sh; rm ins.sh;'
+```
 
 Note: Server will need to have internet access for this script to work.
 
