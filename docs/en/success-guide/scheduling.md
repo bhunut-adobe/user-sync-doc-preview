@@ -15,13 +15,13 @@ nav_order: 320
 
 
 #### Without Email Notification:
-Create a ps1 script with the invocation of user-sync. Create the file run_sync.ps1 for this contents:
+Create a ps1 script with the invocation of user-sync. Create the file run_sync.ps1 with contents below:
 
 	python .\user-sync.pex --users mapped --process-groups
 
 
 #### With Email Notification:
-Create the following PowerShell file with the invocation of user-sync piped to a scan to pull out relevant log entries for a summary.  Create the file run_sync.ps1 for this contents:
+Create the following PowerShell file with the invocation of user-sync piped to a scan to pull out relevant log entries for a summary.  Create the file run_sync.ps1 with contents below::
 
 ```powershell
 <#
@@ -92,13 +92,13 @@ Note that often when setting up scheduled tasks, commands that work from the com
 ## Setting Up Scheduled Run on Unix-Based Systems
 
 #### Without Email Notification:
-Create a shell script with the invocation of user-sync.
+Create a shell script with the invocation of user-sync. Create the file run_sync.sh with contents below:
 
 	cd [user-sync-directory-path]
 	./user-sync --users mapped --process-groups
 
 #### With Email Notification:
-Create a shell script with the invocation of user-sync piped to a scan to pull out relevant log entries for a summary.  Create the file run_sync.sh for this with contents like:
+Create a shell script with the invocation of user-sync piped to a scan to pull out relevant log entries for a summary.  Create the file run_sync.sh with contents below:
 
 	cd [user-sync-directory-path]
 	./user-sync --users mapped --process-groups |  grep "CRITICAL\\|WARNING\\|ERROR\\|=====\\|-----\\|number of\\|Number of" | mail -s “Adobe User Sync Report for `date +%F-%a`”
