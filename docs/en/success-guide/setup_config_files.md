@@ -108,7 +108,7 @@ A more realistic example is:
 	  groups:
 	    - directory_group: acrobat_pro_dc
 	      adobe_groups:
-	        - Default Acrobat_Users
+	        - Acrobat_Users
 	    - directory_group: all_apps
 	      adobe_groups:
 	        - All Apps
