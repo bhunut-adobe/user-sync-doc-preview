@@ -70,9 +70,9 @@ if ($err) {
 ```
 
 ### Task Scheduler
-This PowerShell code uses the Windows task scheduler to run the User Sync tool every day starting at 11:00 PM:
+Using Windows Task Scheduler PowerShell cmdlets below to schedule User Sync Tool to run every day starting at 11:00 PM:
 
-Edit the following and run the commands from PowerShell.
+Edit the following and invoke the commands from PowerShell with elevated privileges.
 
 -WorkingDirectory with your User-Sync Directory path<br/>
 -User with an account that will be running the Task<br/>
@@ -107,7 +107,7 @@ Create a shell script with the invocation of user-sync piped to a scan to pull o
 You need to fill in your specific User Sync command line options and the email address to which the report should be sent.
 
 ### Cron Job
-This entry in  the Unix crontab will run the User Sync tool at 11 PM each day:
+This entry in the Unix crontab will run the User Sync tool at 11 PM each day:
 
 	0 23 * * *  path_to_Sync_shell_command/run_sync.sh
 
