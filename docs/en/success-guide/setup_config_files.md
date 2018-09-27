@@ -114,7 +114,7 @@ A more realistic example is:
 	        - All Apps
 
 
-
+![](images/layout_products_map.png)
 ![](images/setup_config_group_map.png)
 
 #### Unmatched User Limits
